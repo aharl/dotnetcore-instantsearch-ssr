@@ -39,7 +39,7 @@ class SearchContext extends React.Component<Props, ICatalogState> {
         searchState={this.state.searchState}
         onSearchStateChange={this.onSearchStateChange}
         createURL={this.createURL}
-        resultsState={this.props.resultsState || {}}
+        resultsState={this.props.resultsState}
       >
         {this.props.children}
       </InstantSearch>
