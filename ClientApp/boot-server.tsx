@@ -60,7 +60,7 @@ export default createServerRenderer(params => {
     //   initialState = { resultsState };
     // }
 
-    let resultsState: any;
+    let resultsState: any = null;
     // addTask(resultsState);
     const getInitialSearchResults = findResultsState(App).then(
       (results: any) => (resultsState = results)
